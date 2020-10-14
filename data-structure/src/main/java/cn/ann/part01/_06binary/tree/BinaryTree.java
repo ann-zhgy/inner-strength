@@ -49,4 +49,19 @@ public interface BinaryTree<E> {
      * @return true | false
      */
     boolean contains(E element);
+
+    /**
+     * 遍历元素，默认使用前序遍历.
+     *
+     * @param visitor 设置怎么操作元素
+     */
+    void travarsal(Visitor<E> visitor);
+
+    /**
+     * 遍历元素.
+     *
+     * @param order 遍历方式
+     * @param visitor visitor
+     */
+    void travarsal(TravarsalOrder order, Visitor<E> visitor);
 }
