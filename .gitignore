@@ -25,7 +25,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/data-structure/src/main/java/com/leetcode/editor/cn/all.json
-/data-structure/src/main/java/com/leetcode/editor/cn/translation.json
-/data-structure/src/test/
-/data-structure/note/assert/
+/src/main/java/com/leetcode/editor/cn/all.json
+/src/main/java/com/leetcode/editor/cn/translation.json
+/src/test/
+/note/assert/
