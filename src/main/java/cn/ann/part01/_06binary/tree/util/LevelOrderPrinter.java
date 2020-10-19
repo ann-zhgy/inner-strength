@@ -1,7 +1,5 @@
 package cn.ann.part01._06binary.tree.util;
 
-import java.util.*;
-
 /**
 
    ┌───381────┐
