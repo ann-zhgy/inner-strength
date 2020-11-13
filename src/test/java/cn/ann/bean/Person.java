@@ -2,6 +2,7 @@ package cn.ann.bean;
 
 import lombok.Data;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -13,9 +14,13 @@ import java.util.Objects;
  * @version v1.0
  */
 @Data
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
     private int age;
+    private List<String> names;
+
+    public Person() {
+    }
 
     public Person(String name, int age) {
         this.name = name;
@@ -33,5 +38,15 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        int cmp = this.name.compareTo(o.name);
+        if (cmp != 0) {
+            return cmp;
+        }
+        cmp = this.age - o.age;
+        return cmp;
     }
 }
